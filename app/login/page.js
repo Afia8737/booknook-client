@@ -9,13 +9,13 @@ import { safeRedirect } from "@/lib/format";
 import useTitle from "@/lib/useTitle";
 import AuthShell from "@/components/AuthShell";
 
-// function LoginForm() {
-//   useTitle("Login");
-//   const router = useRouter();
-//   const redirect = safeRedirect(useSearchParams().get("redirect"));
-//   const { data: session } = authClient.useSession();
-//   const [loading, setLoading] = useState(false);
-//   const [error, setError] = useState("");
+function LoginForm() {
+  useTitle("Login");
+  const router = useRouter();
+  const redirect = safeRedirect(useSearchParams().get("redirect"));
+  const { data: session } = authClient.useSession();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => { if (session) router.replace(redirect); }, [session, redirect, router]);
 
