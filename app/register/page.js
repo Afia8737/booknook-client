@@ -1,12 +1,12 @@
-// "use client";
-// import { useState } from "react";
-// import Link from "next/link";
-// import { useRouter } from "next/navigation";
-// import toast from "react-hot-toast";
-// import { FcGoogle } from "react-icons/fc";
-// import { authClient } from "@/lib/auth-client";
-// import useTitle from "@/lib/useTitle";
-// import AuthShell from "@/components/AuthShell";
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
+import { FcGoogle } from "react-icons/fc";
+import { authClient } from "@/lib/auth-client";
+import useTitle from "@/lib/useTitle";
+import AuthShell from "@/components/AuthShell";
 
 function passwordError(p) {
   if (p.length < 6) return "Password must be at least 6 characters long.";
