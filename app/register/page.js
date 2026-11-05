@@ -15,11 +15,11 @@ function passwordError(p) {
   return "";
 }
 
-export default function RegisterPage() {
-  useTitle("Register");
-  const router = useRouter();
-  const [loading, setLoading] = useState(false);
-  const [pwError, setPwError] = useState("");
+// export default function RegisterPage() {
+//   useTitle("Register");
+//   const router = useRouter();
+//   const [loading, setLoading] = useState(false);
+//   const [pwError, setPwError] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
