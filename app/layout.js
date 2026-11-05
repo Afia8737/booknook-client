@@ -1,8 +1,8 @@
-// import { Bricolage_Grotesque, Figtree } from "next/font/google";
-// import "./globals.css";
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
-// import Providers from "@/components/Providers";
+import { Bricolage_Grotesque, Figtree } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage" });
 const body = Figtree({ subsets: ["latin"], variable: "--font-figtree" });
