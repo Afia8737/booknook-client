@@ -1,13 +1,13 @@
-// "use client";
-// import { Suspense, useEffect, useState } from "react";
-// import Link from "next/link";
-// import { useRouter, useSearchParams } from "next/navigation";
-// import toast from "react-hot-toast";
-// import { FcGoogle } from "react-icons/fc";
-// import { authClient } from "@/lib/auth-client";
-// import { safeRedirect } from "@/lib/format";
-// import useTitle from "@/lib/useTitle";
-// import AuthShell from "@/components/AuthShell";
+"use client";
+import { Suspense, useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter, useSearchParams } from "next/navigation";
+import toast from "react-hot-toast";
+import { FcGoogle } from "react-icons/fc";
+import { authClient } from "@/lib/auth-client";
+import { safeRedirect } from "@/lib/format";
+import useTitle from "@/lib/useTitle";
+import AuthShell from "@/components/AuthShell";
 
 function LoginForm() {
   useTitle("Login");
