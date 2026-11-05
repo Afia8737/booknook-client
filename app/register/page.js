@@ -15,19 +15,19 @@ function passwordError(p) {
   return "";
 }
 
-// export default function RegisterPage() {
-//   useTitle("Register");
-//   const router = useRouter();
-//   const [loading, setLoading] = useState(false);
-//   const [pwError, setPwError] = useState("");
+export default function RegisterPage() {
+  useTitle("Register");
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
+  const [pwError, setPwError] = useState("");
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    const f = new FormData(e.currentTarget);
-    const password = f.get("password");
-    const problem = passwordError(password);
-    setPwError(problem);
-    if (problem) return toast.error(problem);
+  // const onSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const f = new FormData(e.currentTarget);
+  //   const password = f.get("password");
+  //   const problem = passwordError(password);
+  //   setPwError(problem);
+  //   if (problem) return toast.error(problem);
 
     setLoading(true);
     const { error } = await authClient.signUp.email({
